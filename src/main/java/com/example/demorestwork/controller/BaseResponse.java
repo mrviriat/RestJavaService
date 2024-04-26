@@ -1,25 +1,13 @@
 package com.example.demorestwork.controller;
 
+import lombok.Getter;
+import lombok.AllArgsConstructor;
+
+@Getter
+@AllArgsConstructor
 public class BaseResponse {
-    private final String maxSalary;
-    private final String minSalary;
-    private final String avgSalary;
+    private final Double maxSalary;
+    private final Double minSalary;
+    private final Double avgSalary;
 
-    public BaseResponse(String maxSalary, String minSalary, String avgSalary) {
-        this.maxSalary = maxSalary;
-        this.minSalary = minSalary;
-        this.avgSalary = avgSalary;
-    }
-
-    public String getMaxSalary() {
-        return maxSalary;
-    }
-
-    public String getMinSalary() {
-        return minSalary;
-    }
-
-    public String getAvgSalary() {
-        return avgSalary;
-    }
 }
